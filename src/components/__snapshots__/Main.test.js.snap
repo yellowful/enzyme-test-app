@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`container tests 1`] = `
+<div
+  className="tc"
+>
+  <Header />
+  <SearchBox
+    searchChange={[MockFunction]}
+  />
+  <Scroll>
+    <ErrorBoundary>
+      <CardList
+        robots={Array []}
+      />
+    </ErrorBoundary>
+  </Scroll>
+</div>
+`;
+
+exports[`pending tests 1`] = `
+<div
+  className="tc"
+>
+  <Header />
+  <SearchBox
+    searchChange={[MockFunction]}
+  />
+  <Scroll>
+    <h1>
+      Loading
+    </h1>
+  </Scroll>
+</div>
+`;
