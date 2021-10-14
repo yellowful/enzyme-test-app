@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests of Error Boundry initial state snapshot 1`] = `""`;
+
+exports[`Tests of Error Boundry state test 1`] = `
+<h1>
+  Something went wrong.
+</h1>
+`;
