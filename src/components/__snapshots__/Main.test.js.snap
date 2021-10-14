@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`container tests 1`] = `
+exports[`container snapshot container tests 1`] = `
 <div
   className="tc"
 >
@@ -18,7 +18,7 @@ exports[`container tests 1`] = `
 </div>
 `;
 
-exports[`pending tests 1`] = `
+exports[`container snapshot pending tests 1`] = `
 <div
   className="tc"
 >

@@ -1,3 +1,3 @@
 # enzyme test app
 
-Implemented enzyme tests to a react app.
+:rotating_light: Implemented enzyme tests to a react app.
