@@ -24,7 +24,7 @@ it('pending tests',() => {
     expect(shallow(<Main {...mockProps} />)).toMatchSnapshot();
 })
 
-it('robot filter tests',() => {
+it('not pure robot filter tests',() => {
     const mockProps = {
         robots:[{
             id:1,
@@ -46,10 +46,10 @@ it('robot filter tests',() => {
     }
     const wraper = shallow(<Main {...mockProps} />);
     const instance = wraper.instance();
-    expect(instance.robotFilter(mockProps.robots,mockProps.searchField)).toEqual([{
+    expect(instance.robotFilter()).toEqual([{
         id:2,
         name:'Ervin Howell',
         email:'Shanna@melissa.tv'
     }]);
-    expect(instance.robotFilter(mockProps.robots,'lalala')).toEqual([]);
 })
+

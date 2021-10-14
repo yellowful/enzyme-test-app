@@ -14,15 +14,15 @@ class Main extends Component {
     this.props.onRequestRobots();
   }
 
-  robotFilter = (robots,searchField) => {
-    return robots.filter(robot => {
-        return robot.name.toLowerCase().includes(searchField.toLowerCase());
+  robotFilter = () => {
+    return this.props.robots.filter(robot => {
+        return robot.name.toLowerCase().includes(this.props.searchField.toLowerCase());
       })
   }
   
   render() {
-    const { robots, searchField, onSearchChange, isPending } = this.props;
-    const filteredRobots = this.robotFilter(robots,searchField);
+    const { onSearchChange, isPending } = this.props;
+    const filteredRobots = this.robotFilter();
     return (
       <div className='tc'>
         <Header />
