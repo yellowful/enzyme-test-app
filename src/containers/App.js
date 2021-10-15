@@ -14,7 +14,12 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
-    onRequestRobots: () => requestRobots(dispatch)
+    // 原本寫法
+    // onRequestRobots: () => requestRobots(dispatch)
+    // 改成以下寫法，thunk依然可以處理
+    // 因為dispatch出來的不是一個action，而是一個function，所以thunk就會接手處理
+    onRequestRobots: () => dispatch(requestRobots())
+
   }
 }
 
